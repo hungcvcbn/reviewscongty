@@ -97,7 +97,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
         {/* Comments Section */}
         {showComments && (
           <div className="pt-2">
-            <CommentList comments={review.comments} />
+            <CommentList comments={review.comments} reviewId={review.id} />
           </div>
         )}
       </CardContent>

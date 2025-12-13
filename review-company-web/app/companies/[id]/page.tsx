@@ -100,10 +100,12 @@ export default async function CompanyDetailPage({ params }: CompanyDetailPagePro
                   )}
                 </div>
 
-                <Button className="mt-6 w-full">
-                  <PenLine className="h-4 w-4 mr-2" />
-                  Viết review
-                </Button>
+                <Link href={`/companies/${company.id}/reviews/new`} className="w-full">
+                  <Button className="mt-6 w-full">
+                    <PenLine className="h-4 w-4 mr-2" />
+                    Viết review
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
