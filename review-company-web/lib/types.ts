@@ -1,5 +1,5 @@
 // Company types
-export type CompanyStatus = 'PENDING' | 'APPROVED' | 'ACTIVE' | 'INACTIVE' | 'DELETED';
+export type CompanyStatus = 'PENDING' | 'APPROVED' | 'ACTIVE' | 'INACTIVE' | 'DELETED' | 'REJECTED';
 
 export interface Company {
   id: string;
