@@ -1,0 +1,83 @@
+[
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440001",
+    "review_id": "500e8400-e29b-41d4-a716-446655440001",
+    "company_id": "200e8400-e29b-41d4-a716-446655440001",
+    "content": "Cảm ơn bạn đã dành thời gian chia sẻ trải nghiệm làm việc tại TechCorp Solutions. Chúng tôi rất vui khi biết bạn hài lòng với môi trường làm việc và các chế độ phúc lợi. Chúng tôi sẽ tiếp tục nỗ lực để tạo ra môi trường làm việc tốt nhất cho tất cả nhân viên. Nếu có bất kỳ góp ý nào, đừng ngần ngại liên hệ với chúng tôi!",
+    "created_at": "2024-03-02T09:00:00Z",
+    "updated_at": "2024-03-02T09:00:00Z"
+  },
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440002",
+    "review_id": "500e8400-e29b-41d4-a716-446655440004",
+    "company_id": "200e8400-e29b-41d4-a716-446655440002",
+    "content": "Xin chào! Cảm ơn bạn đã đánh giá về SoftDev Vietnam. Chúng tôi rất trân trọng feedback của bạn và sẽ tiếp tục cải thiện để mang lại trải nghiệm tốt nhất cho nhân viên. Hy vọng bạn sẽ tiếp tục phát triển cùng chúng tôi!",
+    "created_at": "2024-03-16T10:00:00Z",
+    "updated_at": "2024-03-16T10:00:00Z"
+  },
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440003",
+    "review_id": "500e8400-e29b-41d4-a716-446655440008",
+    "company_id": "200e8400-e29b-41d4-a716-446655440003",
+    "content": "Cảm ơn bạn đã chia sẻ trải nghiệm tại Digital Agency Co. Chúng tôi hiểu rằng áp lực công việc có thể cao, đặc biệt trong ngành marketing. Chúng tôi đang nỗ lực cải thiện quy trình làm việc và cân bằng công việc - cuộc sống. Chúng tôi đánh giá cao sự đóng góp của bạn và sẽ tiếp tục lắng nghe feedback để cải thiện.",
+    "created_at": "2024-04-11T08:30:00Z",
+    "updated_at": "2024-04-11T08:30:00Z"
+  },
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440004",
+    "review_id": "500e8400-e29b-41d4-a716-446655440010",
+    "company_id": "200e8400-e29b-41d4-a716-446655440004",
+    "content": "Xin chào! Cảm ơn bạn đã đánh giá tích cực về Innovation Labs. Chúng tôi rất vui khi biết bạn hài lòng với môi trường làm việc và các dự án AI/ML. Chúng tôi cam kết tiếp tục tạo ra những cơ hội học hỏi và phát triển cho tất cả thành viên trong team. Hãy tiếp tục phát huy!",
+    "created_at": "2024-04-21T09:00:00Z",
+    "updated_at": "2024-04-21T09:00:00Z"
+  },
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440005",
+    "review_id": "500e8400-e29b-41d4-a716-446655440012",
+    "company_id": "200e8400-e29b-41d4-a716-446655440005",
+    "content": "Cảm ơn bạn đã dành thời gian đánh giá về FinTech Solutions. Chúng tôi rất vui khi biết bạn hài lòng với môi trường làm việc và các cơ hội phát triển trong lĩnh vực fintech. Chúng tôi sẽ tiếp tục nỗ lực để tạo ra môi trường làm việc tốt nhất cho nhân viên.",
+    "created_at": "2024-05-06T10:00:00Z",
+    "updated_at": "2024-05-06T10:00:00Z"
+  },
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440006",
+    "review_id": "500e8400-e29b-41d4-a716-446655440015",
+    "company_id": "200e8400-e29b-41d4-a716-446655440006",
+    "content": "Cảm ơn bạn đã chia sẻ feedback về E-Commerce Platform. Chúng tôi hiểu rằng với quy mô lớn, việc quản lý có thể phức tạp. Chúng tôi đang tích cực cải thiện quy trình và sự phối hợp giữa các team. Feedback của bạn rất quý giá và giúp chúng tôi phát triển tốt hơn.",
+    "created_at": "2024-05-21T11:00:00Z",
+    "updated_at": "2024-05-21T11:00:00Z"
+  },
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440007",
+    "review_id": "500e8400-e29b-41d4-a716-446655440016",
+    "company_id": "200e8400-e29b-41d4-a716-446655440007",
+    "content": "Xin chào! Cảm ơn bạn đã đánh giá tích cực về Game Studio Vietnam. Chúng tôi rất vui khi biết bạn yêu thích môi trường làm việc sáng tạo tại đây. Chúng tôi sẽ tiếp tục tạo ra những dự án game thú vị và môi trường làm việc tốt nhất cho team!",
+    "created_at": "2024-05-26T09:30:00Z",
+    "updated_at": "2024-05-26T09:30:00Z"
+  },
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440008",
+    "review_id": "500e8400-e29b-41d4-a716-446655440019",
+    "company_id": "200e8400-e29b-41d4-a716-446655440014",
+    "content": "Cảm ơn bạn đã đánh giá cao về Blockchain Tech. Chúng tôi rất trân trọng feedback của bạn. Chúng tôi cam kết tiếp tục tạo ra môi trường làm việc hiện đại và cơ hội phát triển trong lĩnh vực blockchain. Hãy tiếp tục cùng chúng tôi phát triển!",
+    "created_at": "2024-06-11T10:00:00Z",
+    "updated_at": "2024-06-11T10:00:00Z"
+  },
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440009",
+    "review_id": "500e8400-e29b-41d4-a716-446655440020",
+    "company_id": "200e8400-e29b-41d4-a716-446655440015",
+    "content": "Xin chào! Cảm ơn bạn đã chia sẻ về Education Tech. Chúng tôi rất vui khi biết bạn cảm thấy công việc tại đây có ý nghĩa. Được góp phần phát triển giáo dục là niềm vinh dự của chúng tôi. Chúng tôi sẽ tiếp tục nỗ lực để tạo ra những sản phẩm giáo dục tốt nhất!",
+    "created_at": "2024-06-16T09:00:00Z",
+    "updated_at": "2024-06-16T09:00:00Z"
+  },
+  {
+    "id": "800e8400-e29b-41d4-a716-446655440010",
+    "review_id": "500e8400-e29b-41d4-a716-446655440006",
+    "company_id": "200e8400-e29b-41d4-a716-446655440002",
+    "content": "Cảm ơn bạn đã đánh giá về SoftDev Vietnam. Chúng tôi hiểu rằng mỗi người có trải nghiệm khác nhau. Chúng tôi đang nỗ lực cải thiện môi trường làm việc và các cơ hội phát triển. Nếu có bất kỳ góp ý cụ thể nào, chúng tôi rất muốn được lắng nghe.",
+    "created_at": "2024-04-02T09:00:00Z",
+    "updated_at": "2024-04-02T09:00:00Z"
+  }
+]
+
