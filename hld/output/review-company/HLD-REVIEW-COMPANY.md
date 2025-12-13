@@ -27,7 +27,7 @@ ADMIN/MANAGER                  REGULAR USER              COMPANY OWNER
        │                            ├─ 4. Xem chi tiết công ty│
        │                            ├─ 5. Tạo review ─────────┤
        │                            │                         ├─ 6. Phản hồi review
-       │                            ├─ 7. Bình luận ──────────┤
+       │                            ├─ 7. Bình luận và trả lời bình luận ──────────┤
        │                            │                         │
        └─ 8. Quản lý công ty        └─ 9. Quản lý review      └─ 10. Quản lý công ty
 ```
@@ -39,7 +39,7 @@ ADMIN/MANAGER                  REGULAR USER              COMPANY OWNER
 | 1 | **Tạo và duyệt công ty** | Admin/Manager tạo công ty → Admin duyệt → Công ty hiển thị công khai |
 | 2 | **Tìm kiếm và xem công ty** | User tìm kiếm → Xem danh sách → Xem chi tiết công ty |
 | 3 | **Tạo review** | User đăng nhập → Tạo review với rating → Đánh giá theo categories |
-| 4 | **Bình luận và phản hồi** | User bình luận trên review → Company Owner phản hồi |
+| 4 | **Bình luận và phản hồi** | User bình luận trên review → User trả lời bình luận của nhau → Company Owner phản hồi review |
 
 ### 1.2 Bối cảnh về hệ thống (System Context)
 
@@ -82,7 +82,7 @@ ADMIN/MANAGER                  REGULAR USER              COMPANY OWNER
 |-------|-------|-----------------|
 | **Admin** | Quản trị viên hệ thống | Tạo, sửa, xóa công ty, duyệt công ty, xóa review/bình luận vi phạm |
 | **Manager** | Quản lý | Tạo và quản lý công ty được assign |
-| **Regular User** | Người dùng thông thường | Tìm kiếm công ty, xem chi tiết, tạo review, bình luận |
+| **Regular User** | Người dùng thông thường | Tìm kiếm công ty, xem chi tiết, tạo review, bình luận, trả lời bình luận của người khác |
 | **Company Owner** | Chủ công ty | Quản lý thông tin công ty, phản hồi review |
 
 ---
@@ -522,7 +522,7 @@ erDiagram
 | Review | Bài đánh giá của người dùng về công ty |
 | Rating | Điểm số đánh giá (1-5 sao) |
 | Rating Category | Hạng mục đánh giá (Môi trường làm việc, Lương thưởng, Văn hóa, Cơ hội phát triển) |
-| Comment | Bình luận trên review |
+| Comment | Bình luận trên review, có thể là bình luận gốc hoặc trả lời bình luận khác (nested comments) |
 | Company Response | Phản hồi chính thức từ công ty |
 
 ### B. Assumptions
