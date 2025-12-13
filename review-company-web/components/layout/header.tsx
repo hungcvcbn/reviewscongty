@@ -1,14 +1,23 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { Button } from '@/components/ui/button';
-import { Avatar } from '@/components/ui/avatar';
-import { Building2, Search, LogOut, User, Settings, Shield, Menu, X } from 'lucide-react';
-import { useAuth } from '@/contexts/auth-context';
-import { isAdmin, isManager, isCompanyOwner } from '@/lib/auth';
-import { useState, useRef, useEffect } from 'react';
-import { cn } from '@/lib/utils';
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Avatar } from "@/components/ui/avatar";
+import {
+  Building2,
+  Search,
+  LogOut,
+  User,
+  Settings,
+  Shield,
+  Menu,
+  X,
+} from "lucide-react";
+import { useAuth } from "@/contexts/auth-context";
+import { isAdmin, isManager, isCompanyOwner } from "@/lib/auth";
+import { useState, useRef, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const { user, logout, isAuthenticated } = useAuth();
@@ -24,11 +33,11 @@ export function Header() {
       setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -41,79 +50,80 @@ export function Header() {
     };
 
     if (showMenu) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [showMenu]);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
     if (showMobileMenu) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
     return () => {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     };
   }, [showMobileMenu]);
 
   const handleLogout = () => {
     logout();
-    router.push('/');
+    router.push("/");
     setShowMenu(false);
     setShowMobileMenu(false);
   };
 
   const canAccessAdmin = user && (isAdmin(user) || isManager(user));
-  const canAccessCompany = user && (isCompanyOwner(user) || isAdmin(user) || isManager(user));
+  const canAccessCompany =
+    user && (isCompanyOwner(user) || isAdmin(user) || isManager(user));
 
   const navLinkClass = cn(
-    'text-sm font-medium text-gray-600 hover:text-blue-600',
-    'transition-all duration-200 ease-out',
-    'relative after:absolute after:bottom-[-4px] after:left-0',
-    'after:w-0 after:h-0.5 after:bg-blue-600',
-    'after:transition-all after:duration-300 after:ease-out',
-    'hover:after:w-full'
+    "text-sm font-medium text-gray-600 hover:text-blue-600",
+    "transition-all duration-200 ease-out",
+    "relative after:absolute after:bottom-[-4px] after:left-0",
+    "after:w-0 after:h-0.5 after:bg-blue-600",
+    "after:transition-all after:duration-300 after:ease-out",
+    "hover:after:w-full"
   );
 
   const mobileNavLinkClass = cn(
-    'flex items-center gap-3 px-4 py-3 text-base font-medium text-gray-700',
-    'hover:bg-blue-50 hover:text-blue-600',
-    'transition-colors duration-200',
-    'rounded-lg'
+    "flex items-center gap-3 px-4 py-3 text-base font-medium text-gray-700",
+    "hover:bg-blue-50 hover:text-blue-600",
+    "transition-colors duration-200",
+    "rounded-lg"
   );
 
   return (
     <>
       <header
         className={cn(
-          'sticky top-0 z-50 w-full border-b transition-all duration-300',
+          "sticky top-0 z-50 w-full border-b transition-all duration-300",
           isScrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-sm border-gray-200/80'
-            : 'bg-white/80 backdrop-blur border-transparent'
+            ? "bg-white/95 backdrop-blur-md shadow-sm border-gray-200/80"
+            : "bg-white/80 backdrop-blur border-transparent"
         )}
       >
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           {/* Logo */}
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="flex items-center gap-2 group"
             aria-label="Trang chủ ReviewCongTy"
           >
             <div className="relative">
-              <Building2 
+              <Building2
                 className={cn(
-                  'h-7 w-7 text-blue-600 transition-transform duration-300',
-                  'group-hover:scale-110 group-hover:rotate-3'
-                )} 
+                  "h-7 w-7 text-blue-600 transition-transform duration-300",
+                  "group-hover:scale-110 group-hover:rotate-3"
+                )}
               />
               <div className="absolute inset-0 bg-blue-400 rounded-full opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-300" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-blue-600">
               ReviewCongTy
             </span>
           </Link>
@@ -142,9 +152,9 @@ export function Header() {
           <div className="flex items-center gap-3">
             {/* Search Button - Mobile */}
             <Link href="/companies" className="md:hidden">
-              <Button 
-                variant="ghost" 
-                size="icon" 
+              <Button
+                variant="ghost"
+                size="icon"
                 className="hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
                 aria-label="Tìm kiếm công ty"
               >
@@ -158,10 +168,10 @@ export function Header() {
                 <button
                   onClick={() => setShowMenu(!showMenu)}
                   className={cn(
-                    'flex items-center gap-2 rounded-full p-1',
-                    'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',
-                    'transition-all duration-200',
-                    'hover:bg-gray-100'
+                    "flex items-center gap-2 rounded-full p-1",
+                    "focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+                    "transition-all duration-200",
+                    "hover:bg-gray-100"
                   )}
                   aria-expanded={showMenu}
                   aria-haspopup="true"
@@ -169,10 +179,14 @@ export function Header() {
                 >
                   <Avatar className="h-9 w-9 ring-2 ring-white shadow-sm">
                     {user?.avatar_url ? (
-                      <img src={user.avatar_url} alt={user.name} className="object-cover" />
+                      <img
+                        src={user.avatar_url}
+                        alt={user.name}
+                        className="object-cover"
+                      />
                     ) : (
                       <div className="h-full w-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-600 text-white text-sm font-medium">
-                        {user?.name?.charAt(0) || 'U'}
+                        {user?.name?.charAt(0) || "U"}
                       </div>
                     )}
                   </Avatar>
@@ -184,18 +198,22 @@ export function Header() {
                 {/* Dropdown Menu */}
                 <div
                   className={cn(
-                    'absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50',
-                    'transition-all duration-200 ease-out origin-top-right',
+                    "absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50",
+                    "transition-all duration-200 ease-out origin-top-right",
                     showMenu
-                      ? 'opacity-100 scale-100 translate-y-0'
-                      : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
+                      ? "opacity-100 scale-100 translate-y-0"
+                      : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
                   )}
                   role="menu"
                 >
                   {/* User Info */}
                   <div className="px-4 py-3 border-b border-gray-100">
-                    <p className="text-sm font-medium text-gray-900">{user?.name}</p>
-                    <p className="text-xs text-gray-500 truncate">{user?.email}</p>
+                    <p className="text-sm font-medium text-gray-900">
+                      {user?.name}
+                    </p>
+                    <p className="text-xs text-gray-500 truncate">
+                      {user?.email}
+                    </p>
                   </div>
 
                   <div className="py-1">
@@ -246,12 +264,12 @@ export function Header() {
               </div>
             ) : (
               <Link href="/login" className="hidden md:block">
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className={cn(
-                    'border-blue-200 text-blue-600 hover:bg-blue-50 hover:border-blue-300',
-                    'transition-all duration-200',
-                    'hover:shadow-md hover:shadow-blue-100'
+                    "border-blue-200 text-blue-600 hover:bg-blue-50 hover:border-blue-300",
+                    "transition-all duration-200 cursor-pointer",
+                    "hover:shadow-md hover:shadow-blue-100"
                   )}
                 >
                   Đăng nhập
@@ -266,20 +284,24 @@ export function Header() {
               className="md:hidden hover:bg-gray-100 transition-colors duration-200"
               onClick={() => setShowMobileMenu(!showMobileMenu)}
               aria-expanded={showMobileMenu}
-              aria-label={showMobileMenu ? 'Đóng menu' : 'Mở menu'}
+              aria-label={showMobileMenu ? "Đóng menu" : "Mở menu"}
             >
               <div className="relative w-5 h-5">
-                <Menu 
+                <Menu
                   className={cn(
-                    'h-5 w-5 absolute inset-0 transition-all duration-300',
-                    showMobileMenu ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'
-                  )} 
+                    "h-5 w-5 absolute inset-0 transition-all duration-300",
+                    showMobileMenu
+                      ? "opacity-0 rotate-90"
+                      : "opacity-100 rotate-0"
+                  )}
                 />
-                <X 
+                <X
                   className={cn(
-                    'h-5 w-5 absolute inset-0 transition-all duration-300',
-                    showMobileMenu ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'
-                  )} 
+                    "h-5 w-5 absolute inset-0 transition-all duration-300",
+                    showMobileMenu
+                      ? "opacity-100 rotate-0"
+                      : "opacity-0 -rotate-90"
+                  )}
                 />
               </div>
             </Button>
@@ -290,9 +312,9 @@ export function Header() {
       {/* Mobile Menu Overlay */}
       <div
         className={cn(
-          'fixed inset-0 z-40 bg-black/50 md:hidden',
-          'transition-opacity duration-300',
-          showMobileMenu ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          "fixed inset-0 z-40 bg-black/50 md:hidden",
+          "transition-opacity duration-300",
+          showMobileMenu ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
         onClick={() => setShowMobileMenu(false)}
         aria-hidden="true"
@@ -301,23 +323,23 @@ export function Header() {
       {/* Mobile Menu Panel */}
       <div
         className={cn(
-          'fixed top-16 right-0 bottom-0 w-72 z-40 bg-white md:hidden',
-          'shadow-xl border-l border-gray-100',
-          'transition-transform duration-300 ease-out',
-          showMobileMenu ? 'translate-x-0' : 'translate-x-full'
+          "fixed top-16 right-0 bottom-0 w-72 z-40 bg-white md:hidden",
+          "shadow-xl border-l border-gray-100",
+          "transition-transform duration-300 ease-out",
+          showMobileMenu ? "translate-x-0" : "translate-x-full"
         )}
       >
         <nav className="p-4 space-y-2">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className={mobileNavLinkClass}
             onClick={() => setShowMobileMenu(false)}
           >
             <Building2 className="h-5 w-5" />
             Trang chủ
           </Link>
-          <Link 
-            href="/companies" 
+          <Link
+            href="/companies"
             className={mobileNavLinkClass}
             onClick={() => setShowMobileMenu(false)}
           >
@@ -325,8 +347,8 @@ export function Header() {
             Danh sách công ty
           </Link>
           {canAccessAdmin && (
-            <Link 
-              href="/admin" 
+            <Link
+              href="/admin"
               className={mobileNavLinkClass}
               onClick={() => setShowMobileMenu(false)}
             >
@@ -335,8 +357,8 @@ export function Header() {
             </Link>
           )}
           {canAccessCompany && (
-            <Link 
-              href="/company" 
+            <Link
+              href="/company"
               className={mobileNavLinkClass}
               onClick={() => setShowMobileMenu(false)}
             >
@@ -349,8 +371,8 @@ export function Header() {
 
           {isAuthenticated ? (
             <>
-              <Link 
-                href="/profile" 
+              <Link
+                href="/profile"
                 className={mobileNavLinkClass}
                 onClick={() => setShowMobileMenu(false)}
               >
@@ -359,16 +381,22 @@ export function Header() {
               </Link>
               <button
                 onClick={handleLogout}
-                className={cn(mobileNavLinkClass, 'w-full text-red-600 hover:bg-red-50')}
+                className={cn(
+                  mobileNavLinkClass,
+                  "w-full text-red-600 hover:bg-red-50"
+                )}
               >
                 <LogOut className="h-5 w-5" />
                 Đăng xuất
               </button>
             </>
           ) : (
-            <Link 
-              href="/login" 
-              className={cn(mobileNavLinkClass, 'bg-blue-600 text-white hover:bg-blue-700')}
+            <Link
+              href="/login"
+              className={cn(
+                mobileNavLinkClass,
+                "bg-blue-600 text-white hover:bg-blue-700"
+              )}
               onClick={() => setShowMobileMenu(false)}
             >
               <User className="h-5 w-5" />
