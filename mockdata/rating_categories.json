@@ -1,0 +1,27 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440001",
+    "name": "WORK_ENVIRONMENT",
+    "description": "Môi trường làm việc - Điều kiện và không gian làm việc, công cụ hỗ trợ, đồng nghiệp",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440002",
+    "name": "SALARY_BENEFITS",
+    "description": "Lương thưởng - Chế độ lương, thưởng, phúc lợi, bảo hiểm, nghỉ phép",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440003",
+    "name": "COMPANY_CULTURE",
+    "description": "Văn hóa công ty - Giá trị, phong cách làm việc, môi trường văn hóa, teamwork",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440004",
+    "name": "GROWTH_OPPORTUNITIES",
+    "description": "Cơ hội phát triển - Đào tạo, thăng tiến, phát triển kỹ năng, sự nghiệp",
+    "created_at": "2025-01-01T00:00:00Z"
+  }
+]
+

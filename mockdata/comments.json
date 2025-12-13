@@ -1,0 +1,203 @@
+[
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440001",
+    "review_id": "500e8400-e29b-41d4-a716-446655440001",
+    "user_id": "100e8400-e29b-41d4-a716-446655440004",
+    "parent_comment_id": null,
+    "content": "Đồng ý với bạn! Tôi cũng làm việc tại TechCorp và rất hài lòng với môi trường làm việc ở đây.",
+    "likes_count": 5,
+    "created_at": "2024-03-01T15:00:00Z",
+    "updated_at": "2024-03-01T15:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440002",
+    "review_id": "500e8400-e29b-41d4-a716-446655440001",
+    "user_id": "100e8400-e29b-41d4-a716-446655440005",
+    "parent_comment_id": "700e8400-e29b-41d4-a716-446655440001",
+    "content": "Tôi cũng vậy! Đồng nghiệp rất thân thiện và hỗ trợ.",
+    "likes_count": 3,
+    "created_at": "2024-03-01T16:30:00Z",
+    "updated_at": "2024-03-01T16:30:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440003",
+    "review_id": "500e8400-e29b-41d4-a716-446655440001",
+    "user_id": "100e8400-e29b-41d4-a716-446655440006",
+    "parent_comment_id": null,
+    "content": "Cảm ơn bạn đã chia sẻ! Tôi đang quan tâm đến vị trí tại TechCorp, review này rất hữu ích.",
+    "likes_count": 2,
+    "created_at": "2024-03-02T10:00:00Z",
+    "updated_at": "2024-03-02T10:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440004",
+    "review_id": "500e8400-e29b-41d4-a716-446655440002",
+    "user_id": "100e8400-e29b-41d4-a716-446655440003",
+    "parent_comment_id": null,
+    "content": "Review rất chi tiết, cảm ơn bạn! Tôi đang cân nhắc apply vào TechCorp.",
+    "likes_count": 1,
+    "created_at": "2024-03-05T16:00:00Z",
+    "updated_at": "2024-03-05T16:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440005",
+    "review_id": "500e8400-e29b-41d4-a716-446655440004",
+    "user_id": "100e8400-e29b-41d4-a716-446655440005",
+    "parent_comment_id": null,
+    "content": "Tôi cũng làm việc tại SoftDev, có thể chia sẻ thêm về quy trình tuyển dụng không?",
+    "likes_count": 4,
+    "created_at": "2024-03-15T14:00:00Z",
+    "updated_at": "2024-03-15T14:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440006",
+    "review_id": "500e8400-e29b-41d4-a716-446655440004",
+    "user_id": "100e8400-e29b-41d4-a716-446655440004",
+    "parent_comment_id": "700e8400-e29b-41d4-a716-446655440005",
+    "content": "Quy trình khá chuẩn: CV -> Phone screen -> Technical interview -> Offer. Chúc bạn may mắn!",
+    "likes_count": 2,
+    "created_at": "2024-03-15T15:30:00Z",
+    "updated_at": "2024-03-15T15:30:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440007",
+    "review_id": "500e8400-e29b-41d4-a716-446655440007",
+    "user_id": "100e8400-e29b-41d4-a716-446655440008",
+    "parent_comment_id": null,
+    "content": "Đúng là áp lực cao nhưng được học hỏi rất nhiều! Phù hợp cho người trẻ muốn phát triển nhanh.",
+    "likes_count": 6,
+    "created_at": "2024-04-05T16:00:00Z",
+    "updated_at": "2024-04-05T16:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440008",
+    "review_id": "500e8400-e29b-41d4-a716-446655440007",
+    "user_id": "100e8400-e29b-41d4-a716-446655440009",
+    "parent_comment_id": "700e8400-e29b-41d4-a716-446655440007",
+    "content": "Cảm ơn bạn đã chia sẻ! Mình cũng đang cân nhắc apply vào vị trí designer.",
+    "likes_count": 1,
+    "created_at": "2024-04-06T09:00:00Z",
+    "updated_at": "2024-04-06T09:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440009",
+    "review_id": "500e8400-e29b-41d4-a716-446655440008",
+    "user_id": "100e8400-e29b-41d4-a716-446655440003",
+    "parent_comment_id": null,
+    "content": "Áp lực công việc có thể cao nhưng cơ hội học hỏi rất lớn. Nếu bạn muốn phát triển nhanh thì đây là nơi tốt.",
+    "likes_count": 3,
+    "created_at": "2024-04-10T11:00:00Z",
+    "updated_at": "2024-04-10T11:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440010",
+    "review_id": "500e8400-e29b-41d4-a716-446655440010",
+    "user_id": "100e8400-e29b-41d4-a716-446655440004",
+    "parent_comment_id": null,
+    "content": "Innovation Labs thật sự là một startup đầy tiềm năng! Mình cũng đang làm việc với AI/ML và rất thích môi trường ở đây.",
+    "likes_count": 8,
+    "created_at": "2024-04-20T14:00:00Z",
+    "updated_at": "2024-04-20T14:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440011",
+    "review_id": "500e8400-e29b-41d4-a716-446655440010",
+    "user_id": "100e8400-e29b-41d4-a716-446655440006",
+    "parent_comment_id": "700e8400-e29b-41d4-a716-446655440010",
+    "content": "Bạn có thể chia sẻ thêm về các dự án AI/ML mà công ty đang làm không?",
+    "likes_count": 5,
+    "created_at": "2024-04-20T15:30:00Z",
+    "updated_at": "2024-04-20T15:30:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440012",
+    "review_id": "500e8400-e29b-41d4-a716-446655440010",
+    "user_id": "100e8400-e29b-41d4-a716-446655440004",
+    "parent_comment_id": "700e8400-e29b-41d4-a716-446655440011",
+    "content": "Hiện tại công ty đang làm về computer vision và NLP. Có nhiều dự án thú vị lắm!",
+    "likes_count": 4,
+    "created_at": "2024-04-20T16:00:00Z",
+    "updated_at": "2024-04-20T16:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440013",
+    "review_id": "500e8400-e29b-41d4-a716-446655440012",
+    "user_id": "100e8400-e29b-41d4-a716-446655440007",
+    "parent_comment_id": null,
+    "content": "FinTech Solutions là công ty fintech hàng đầu. Môi trường làm việc rất chuyên nghiệp.",
+    "likes_count": 5,
+    "created_at": "2024-05-05T16:00:00Z",
+    "updated_at": "2024-05-05T16:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440014",
+    "review_id": "500e8400-e29b-41d4-a716-446655440015",
+    "user_id": "100e8400-e29b-41d4-a716-446655440012",
+    "parent_comment_id": null,
+    "content": "E-Commerce Platform là công ty lớn nhưng quản lý còn nhiều vấn đề cần cải thiện. Đồng ý với bạn.",
+    "likes_count": 7,
+    "created_at": "2024-05-20T14:00:00Z",
+    "updated_at": "2024-05-20T14:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440015",
+    "review_id": "500e8400-e29b-41d4-a716-446655440015",
+    "user_id": "100e8400-e29b-41d4-a716-446655440011",
+    "parent_comment_id": "700e8400-e29b-41d4-a716-446655440014",
+    "content": "Tôi cũng thấy vậy. Hy vọng công ty sẽ cải thiện trong thời gian tới.",
+    "likes_count": 2,
+    "created_at": "2024-05-20T15:00:00Z",
+    "updated_at": "2024-05-20T15:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440016",
+    "review_id": "500e8400-e29b-41d4-a716-446655440016",
+    "user_id": "100e8400-e29b-41d4-a716-446655440005",
+    "parent_comment_id": null,
+    "content": "Game Studio Vietnam thật sự là nơi lý tưởng cho những ai yêu thích game development!",
+    "likes_count": 9,
+    "created_at": "2024-05-25T14:00:00Z",
+    "updated_at": "2024-05-25T14:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440017",
+    "review_id": "500e8400-e29b-41d4-a716-446655440016",
+    "user_id": "100e8400-e29b-41d4-a716-446655440013",
+    "parent_comment_id": "700e8400-e29b-41d4-a716-446655440016",
+    "content": "Đúng vậy! Mình cũng đang apply vào đây. Review của bạn rất hữu ích!",
+    "likes_count": 3,
+    "created_at": "2024-05-25T15:30:00Z",
+    "updated_at": "2024-05-25T15:30:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440018",
+    "review_id": "500e8400-e29b-41d4-a716-446655440019",
+    "user_id": "100e8400-e29b-41d4-a716-446655440015",
+    "parent_comment_id": null,
+    "content": "Blockchain Tech là công ty rất tốt! Làm việc với blockchain technology rất thú vị và có nhiều cơ hội phát triển.",
+    "likes_count": 6,
+    "created_at": "2024-06-10T16:00:00Z",
+    "updated_at": "2024-06-10T16:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440019",
+    "review_id": "500e8400-e29b-41d4-a716-446655440020",
+    "user_id": "100e8400-e29b-41d4-a716-446655440014",
+    "parent_comment_id": null,
+    "content": "Làm việc tại Education Tech thật sự rất ý nghĩa. Được góp phần phát triển giáo dục là điều tuyệt vời!",
+    "likes_count": 7,
+    "created_at": "2024-06-15T14:00:00Z",
+    "updated_at": "2024-06-15T14:00:00Z"
+  },
+  {
+    "id": "700e8400-e29b-41d4-a716-446655440020",
+    "review_id": "500e8400-e29b-41d4-a716-446655440019",
+    "user_id": "100e8400-e29b-41d4-a716-446655440003",
+    "parent_comment_id": "700e8400-e29b-41d4-a716-446655440018",
+    "content": "Bạn có thể chia sẻ thêm về các dự án blockchain mà công ty đang làm không?",
+    "likes_count": 4,
+    "created_at": "2024-06-10T17:00:00Z",
+    "updated_at": "2024-06-10T17:00:00Z"
+  }
+]
+
