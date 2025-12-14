@@ -8,13 +8,13 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { RatingDisplay } from './rating-display';
 import { CommentList } from './comment-list';
-import { ReviewWithDetails } from '@/lib/types';
+import { ReviewWithDetails, ReviewFromApi } from '@/lib/types';
 import { formatDistanceToNow } from '@/lib/utils';
 import { MessageCircle, ChevronDown, Building2, ThumbsUp, Share2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface ReviewCardProps {
-  review: ReviewWithDetails;
+  review: ReviewWithDetails | ReviewFromApi;
   index?: number;
 }
 
@@ -30,12 +30,15 @@ export function ReviewCard({ review, index = 0 }: ReviewCardProps) {
 
   const userAvatar = review.is_anonymous ? null : review.user?.avatar_url;
 
+  // Get comments with fallback to empty array
+  const comments = review.comments || [];
+
   // Calculate comments section height for smooth animation
   useEffect(() => {
     if (commentsRef.current) {
       setCommentsHeight(commentsRef.current.scrollHeight);
     }
-  }, [showComments, review.comments]);
+  }, [showComments, comments]);
 
   const handleToggleComments = () => {
     setShowComments(!showComments);
@@ -207,7 +210,7 @@ export function ReviewCard({ review, index = 0 }: ReviewCardProps) {
                 showComments && 'fill-blue-100'
               )} 
             />
-            {review.comments.length} bình luận
+            {comments.length} bình luận
             <ChevronDown 
               className={cn(
                 'h-4 w-4 ml-1 transition-transform duration-300',
@@ -229,7 +232,7 @@ export function ReviewCard({ review, index = 0 }: ReviewCardProps) {
           }}
         >
           <div ref={commentsRef} className="pt-4">
-            <CommentList comments={review.comments} reviewId={review.id} />
+            <CommentList comments={comments} reviewId={review.id} />
           </div>
         </div>
       </CardContent>

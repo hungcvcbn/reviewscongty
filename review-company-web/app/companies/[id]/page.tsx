@@ -9,10 +9,10 @@ import { RatingBreakdown } from '@/components/review/rating-breakdown';
 import { ReviewList } from '@/components/review/review-list';
 import { FadeIn, ScrollToTop } from '@/components/animations';
 import {
-  getCompanyById,
-  getReviewsWithDetailsForCompany,
-  getCategoryRatingsForCompany,
-} from '@/lib/data';
+  fetchCompanyById,
+  fetchCompanyReviews,
+  fetchCompanyCategoryRatings,
+} from '@/lib/api';
 import {
   MapPin,
   Globe,
@@ -32,14 +32,25 @@ interface CompanyDetailPageProps {
 
 export default async function CompanyDetailPage({ params }: CompanyDetailPageProps) {
   const { id } = await params;
-  const company = getCompanyById(id);
+  
+  let company;
+  try {
+    company = await fetchCompanyById(id);
+  } catch {
+    notFound();
+  }
 
   if (!company || company.status !== 'ACTIVE') {
     notFound();
   }
 
-  const reviews = getReviewsWithDetailsForCompany(company.id);
-  const categoryRatings = getCategoryRatingsForCompany(company.id);
+  // Fetch reviews and category ratings in parallel
+  const [reviewsResponse, categoryRatings] = await Promise.all([
+    fetchCompanyReviews(company.id, { limit: 100 }),
+    fetchCompanyCategoryRatings(company.id),
+  ]);
+  
+  const reviews = reviewsResponse.data;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

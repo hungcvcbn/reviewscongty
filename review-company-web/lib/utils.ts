@@ -37,3 +37,14 @@ export function formatDistanceToNow(dateString: string): string {
   const diffInYears = Math.floor(diffInMonths / 12);
   return `${diffInYears} năm trước`;
 }
+
+// Get category name in Vietnamese
+export function getCategoryNameVi(categoryName: string): string {
+  const names: Record<string, string> = {
+    WORK_ENVIRONMENT: 'Môi trường làm việc',
+    SALARY_BENEFITS: 'Lương thưởng',
+    COMPANY_CULTURE: 'Văn hóa công ty',
+    GROWTH_OPPORTUNITIES: 'Cơ hội phát triển',
+  };
+  return names[categoryName] || categoryName;
+}

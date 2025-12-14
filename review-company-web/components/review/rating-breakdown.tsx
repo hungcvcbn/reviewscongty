@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { CategoryRating } from '@/lib/types';
-import { getCategoryNameVi } from '@/lib/data';
-import { cn } from '@/lib/utils';
+import { cn, getCategoryNameVi } from '@/lib/utils';
 
 interface RatingBreakdownProps {
   categoryRatings: CategoryRating[];

@@ -1,4 +1,26 @@
-// Company types
+// ============ API Response Types ============
+
+export interface ApiResponse<T> {
+  success: boolean;
+  message: string;
+  data: T;
+}
+
+export interface Pagination {
+  page: number;
+  limit: number;
+  total: number;
+  totalPages: number;
+  hasNext: boolean;
+  hasPrev: boolean;
+}
+
+export interface PaginatedData<T> {
+  data: T[];
+  pagination: Pagination;
+}
+
+// ============ Company types ============
 export type CompanyStatus = 'PENDING' | 'APPROVED' | 'ACTIVE' | 'INACTIVE' | 'DELETED' | 'REJECTED';
 
 export interface Company {
@@ -16,6 +38,17 @@ export interface Company {
   created_at: string;
   updated_at: string;
   version: number;
+}
+
+// Company with additional data from API
+export interface CompanyWithDetails extends Company {
+  categories?: { id: string; category_name: string }[];
+  owners?: {
+    id: string;
+    user_id: string;
+    user: { id: string; name: string; email: string };
+  }[];
+  creator?: { id: string; name: string };
 }
 
 // User types
@@ -63,6 +96,11 @@ export interface Rating {
   created_at: string;
 }
 
+// Rating with category details from API
+export interface RatingWithCategory extends Rating {
+  category: RatingCategory;
+}
+
 // Comment types
 export interface Comment {
   id: string;
@@ -108,9 +146,27 @@ export interface ReviewWithUser extends Review {
 
 export interface ReviewWithDetails extends Review {
   user: User | null;
-  ratings: Rating[];
+  ratings: Rating[] | RatingWithCategory[];
   comments: CommentWithUser[];
   companyResponse: CompanyResponse | null;
+}
+
+// Review from API with company info
+export interface ReviewFromApi extends Review {
+  user: { id: string; name: string; avatar_url: string | null } | null;
+  company?: { id: string; name: string; logo_url: string | null; address?: string };
+  ratings: RatingWithCategory[];
+  companyResponse: CompanyResponse | null;
+  comments?: CommentWithUser[];
+}
+
+// Statistics from API
+export interface Statistics {
+  totalCompanies: number;
+  totalReviews: number;
+  totalUsers: number;
+  totalComments: number;
+  averageRating: number;
 }
 
 export interface CommentWithUser extends Comment {

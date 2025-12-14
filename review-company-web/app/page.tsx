@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CompanyCard } from "@/components/company/company-card";
 import { CompanySearch } from "@/components/company/company-search";
-import { getTopRatedCompanies, getStatistics } from "@/lib/data";
+import { fetchCompanies, fetchStatistics } from "@/lib/api";
 import {
   FadeIn,
   AnimatedCounter,
@@ -22,9 +22,14 @@ import {
 } from "@/components/animations";
 import { cn } from "@/lib/utils";
 
-export default function HomePage() {
-  const topCompanies = getTopRatedCompanies(6);
-  const stats = getStatistics();
+export default async function HomePage() {
+  // Fetch data from API
+  const [companiesResponse, stats] = await Promise.all([
+    fetchCompanies({ sort: 'rating_desc', limit: 6 }),
+    fetchStatistics(),
+  ]);
+  
+  const topCompanies = companiesResponse.data;
 
   return (
     <div className="flex flex-col overflow-hidden">

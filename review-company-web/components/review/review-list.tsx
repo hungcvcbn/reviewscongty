@@ -1,11 +1,11 @@
 import { ReviewCard } from './review-card';
-import { ReviewWithDetails } from '@/lib/types';
+import { ReviewWithDetails, ReviewFromApi } from '@/lib/types';
 import { MessageSquare, PenLine } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
 interface ReviewListProps {
-  reviews: ReviewWithDetails[];
+  reviews: (ReviewWithDetails | ReviewFromApi)[];
 }
 
 export function ReviewList({ reviews }: ReviewListProps) {
