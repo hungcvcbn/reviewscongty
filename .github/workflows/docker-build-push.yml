@@ -27,9 +27,9 @@ jobs:
       - name: Build Docker image
         run: |
           cd review-company-web
-          docker build -t ghcr.io/${{ github.repository_owner }}/fe-service:$GIT_SHA  .
+          docker build -t ghcr.io/${{ github.repository_owner }}/reviewscongty:fe_$GIT_SHA  .
 
       # Step 4: Push the Docker image to GHCR
       - name: Push Docker image
         run: |
-          docker push ghcr.io/${{ github.repository_owner }}/fe-service:$GIT_SHA
+          docker push ghcr.io/${{ github.repository_owner }}/reviewscongty:fe_$GIT_SHA
