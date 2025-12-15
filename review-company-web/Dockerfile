@@ -13,26 +13,27 @@ RUN npm install
 # Copy the rest of the application code to the container
 COPY . .
 
-# Set the environment variable for production
-# ENV NODE_ENV=production
-
 # Build the Next.js app
 RUN npm run build
 
-# Stage 2: Serve the app with NGINX
-FROM nginx:alpine
+# Stage 2: Run the Next.js app
+FROM node:24-alpine
 
-# Set up working directory for NGINX
-WORKDIR /usr/share/nginx/html
+# Set the working directory inside the container
+WORKDIR /app
 
-# Copy the built Next.js app from the builder stage to NGINX's html folder
-COPY --from=builder /app /usr/share/nginx/html
+# Copy only the necessary files from the builder stage
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/next.config.js ./next.config.js
 
-# Copy custom NGINX configuration
-COPY default.conf /etc/nginx/conf.d/default.conf
+# Expose port 3000 for the Next.js app
+EXPOSE 3000
 
-# Expose port 8080 for NGINX
-EXPOSE 8080
+# Set the environment variable for production
+ENV NODE_ENV=production
 
-# Start NGINX
-CMD ["nginx", "-g", "daemon off;"]
+# Start the Next.js app
+CMD ["npm", "run", "start"]
