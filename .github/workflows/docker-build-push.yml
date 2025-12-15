@@ -26,7 +26,7 @@ jobs:
       # Step 3: Build the Docker image
       - name: Build Docker image
         run: |
-          cd reviews-company-web
+          cd review-company-web
           docker build -t ghcr.io/${{ github.repository_owner }}/fe-service:$GIT_SHA  .
 
       # Step 4: Push the Docker image to GHCR
