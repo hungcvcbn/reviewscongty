@@ -100,3 +100,77 @@ Hệ quả: Họ sẽ viết: "Điểm tốt: Không có gì", "Điểm tốt: N
 Thực tế: Nếu công ty đó thực sự tệ (100 review 1 sao), nhưng thuật toán của bạn cố tình đẩy 1 review 4 sao lên đầu để "Balance".
 
 Hệ quả: User vào làm việc, thấy bị lừa, quay lại chửi nền tảng là "bao che". Sự thật không phải lúc nào cũng cân bằng (bell curve), đôi khi sự thật là lệch hẳn về một phía. Cố tình cân bằng là bóp méo sự thật.
+
+lần 2
+1. CRITICAL PRIORITY (Mức độ Sống còn - Nếu không sửa, dự án sẽ chết)
+🔴 1.1. Chiến lược Pivot sang "Fresh Graduates" là con dao hai lưỡi (Mục 2.2)
+Phản biện: Đây là rủi ro lớn nhất trong bản đề xuất này.
+
+Giá trị nội dung thấp: Sinh viên mới ra trường/Thực tập sinh thường chỉ quan tâm đến: Có được trả lương không? Có dấu mộc thực tập không? Họ chưa đủ trải nghiệm để đánh giá sâu về Strategy, Management, hay Politics của công ty. Review của họ ít giá trị với nhóm nhân sự cấp cao (Mid/Senior) - nhóm mà nhà tuyển dụng khao khát nhất.
+
+Sức mua thấp (Low Monetization): Nhà tuyển dụng sẵn sàng trả 20 triệu để tuyển 1 Senior Dev, nhưng họ miễn cưỡng trả 500k để tuyển thực tập sinh (thậm chí tuyển miễn phí trên Facebook). Nếu traffic của bạn toàn sinh viên -> Doanh thu quảng cáo và Job Posting sẽ cực thấp.
+
+Red Ocean: Bạn đang lao vào sân chơi của Ybox, TopCV (phân khúc entry-level).
+
+🔴 1.2. Ảo tưởng về "Lá chắn pháp lý Singapore" (Mục 4.1)
+Phản biện: Luật An Ninh Mạng và Nghị định 53/2022/ND-CP của Việt Nam quy định rất rõ về Lưu trữ dữ liệu tại Việt Nam và Văn phòng đại diện nếu bạn kinh doanh trên không gian mạng VN.
+
+Dù công ty mẹ ở Singapore, nếu bạn có nhân sự vận hành và thu tiền tại Việt Nam (Công ty TNHH ReviewCo VN), bạn chịu hoàn toàn trách nhiệm hình sự/dân sự tại VN.
+
+Khi có công văn yêu cầu gỡ bỏ từ Bộ TTTT hoặc Bộ Công An, việc bạn nói "Data ở Singapore" là vô nghĩa. Họ sẽ yêu cầu ISP (Viettel, FPT) chặn domain của bạn ngay lập tức.
+
+Hệ quả: Giải pháp "Singapore Holding" chỉ giải quyết vấn đề gọi vốn, không giải quyết vấn đề kiểm duyệt tại nước sở tại.
+
+🔴 1.3. Nghịch lý "Aggregate Until Safe" (Mục 1.2)
+Phản biện:
+
+Kịch bản: Công ty A có 8 review. Hệ thống yêu cầu 10 review mới mở khóa.
+
+User thứ 9 vào viết review. Viết xong, họ vẫn không xem được gì (vì chưa đủ 10).
+
+Hệ quả: User thứ 9 cảm thấy bị lừa. Tính năng này tạo ra một "Micro Cold Start Problem" cho từng công ty nhỏ. Hàng nghìn công ty SME sẽ mãi mãi kẹt ở con số 3-4 review và không bao giờ hiển thị được nội dung.
+
+2. HIGH PRIORITY (Rủi ro cao - Ảnh hưởng lớn đến Business Model)
+🟠 2.1. Doanh thu phụ thuộc 40% vào Job Posting (Mục 3.3)
+Phản biện: Bạn đang biến mình thành đối thủ của VietnamWorks, TopCV, ITViec.
+
+Tại sao HR lại đăng tin tuyển dụng trên một cái "bãi chiến trường" (nơi công ty họ có thể đang bị chửi)?
+
+HR sẽ chỉ đăng tin nếu review công ty họ Tốt.
+
+Nếu review công ty họ Xấu, họ sẽ không trả tiền cho bạn -> Bạn mất doanh thu.
+
+Xung đột lợi ích: Để giữ doanh thu 40% này, Sale team sẽ gây áp lực lên Content team để ẩn review xấu của khách hàng mua Job Posting. "Firewall" của bạn sẽ bị chọc thủng bởi áp lực doanh số.
+
+🟠 2.2. Level 2 Verify qua LinkedIn (Mục 1.1)
+Phản biện:
+
+User Việt Nam rất sợ lộ LinkedIn. Có nhiều tool (extension) cho phép HR scan LinkedIn profile để xem activity.
+
+Nếu tôi connect LinkedIn với web review, dù bạn hứa là ẩn danh, tôi vẫn sợ.
+
+Thực tế: Mức Level 1 (Phone OTP) là khả thi nhất và đủ tốt. Đừng quá kỳ vọng vào LinkedIn verify.
+
+3. MEDIUM PRIORITY (Vấn đề vận hành & Kỹ thuật)
+🟡 3.1. Thuật toán Quality Check bằng AI (Mục 2.1)
+Phản biện:
+
+User rất thông minh. Nếu AI bắt viết 200 từ, họ sẽ copy-paste một đoạn văn mẫu hoặc dùng ChatGPT viết ra một đoạn review vô thưởng vô phạt để unlock.
+
+Bạn sẽ nhận được những review dài, chuẩn ngữ pháp, nhưng sáo rỗng (Empty Content).
+
+🟡 3.2. Hiển thị "Instant" nhưng thực tế là "Delayed" (Mục 5.1)
+Phản biện:
+
+Kịch bản: Tôi viết review xong, chụp màn hình gửi cho đồng nghiệp: "Tao mới chửi sếp nè, lên xem đi".
+
+Đồng nghiệp lên xem -> Không thấy gì (vì đang delay 48h với public).
+
+Đồng nghiệp bảo: "Mày chém gió à? Hay web xóa rồi?".
+
+Hệ quả: Gây hoang mang và mất niềm tin cục bộ. Cần thông báo cực rõ: "Chỉ CÓ BẠN mới nhìn thấy review này trong 48h tới".
+
+4. LOW PRIORITY (Tiểu tiết - Có thể tối ưu sau)
+User-Controlled Sorting: Tốt, nhưng không quá quan trọng giai đoạn đầu.
+
+Flexible Form: Tốt, giảm friction.

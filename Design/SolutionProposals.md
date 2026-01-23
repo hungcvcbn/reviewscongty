@@ -865,3 +865,493 @@ EFFORT ──┼───Premium─────┼──────────
 | 48h Cooling | Better UX | Less "cool down" | Instant for trusted users |
 | Flexible Form | Less friction | More one-sided reviews | Visibility incentives |
 | User Sorting | Transparency | May highlight negatives | Distribution chart |
+
+---
+
+## 7. PHẢN BIỆN CẤP 2: GIẢI QUYẾT CÁC LỖ HỔNG TRONG GIẢI PHÁP ĐỀ XUẤT
+
+> **Phần này phản hồi các phản biện mới trong `counterArgument.md` (từ dòng 103) - những phản biện về chính các giải pháp đã đề xuất ở trên.**
+
+---
+
+### 7.1. CRITICAL: Chiến lược Pivot sang "Fresh Graduates" là con dao hai lưỡi
+
+**Phản biện:**
+- Giá trị nội dung thấp: Sinh viên chưa đủ trải nghiệm đánh giá Strategy, Management
+- Sức mua thấp: HR không trả tiền cho entry-level hiring
+- Red Ocean: Cạnh tranh với Ybox, TopCV
+
+**Giải pháp: Hybrid Target Strategy**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    REVISED TARGET STRATEGY                               │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  KHÔNG phải: Chỉ Fresh Graduates                                        │
+│  MÀ LÀ: "Career Transition Moments"                                     │
+│                                                                          │
+│  TARGET SEGMENTS:                                                        │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                                                                  │    │
+│  │  Segment 1: FIRST JOB SEEKERS (30%)                             │    │
+│  │  - Fresh grads + Career changers                                │    │
+│  │  - Low monetization, HIGH VOLUME for seeding                    │    │
+│  │  - Value: Tạo base content, viral potential                     │    │
+│  │                                                                  │    │
+│  │  Segment 2: JOB HOPPERS - 2-5 năm exp (40%) ⭐ PRIMARY          │    │
+│  │  - Đang muốn nhảy việc, có kinh nghiệm thực tế                  │    │
+│  │  - CÓ THỂ viết review chất lượng                                │    │
+│  │  - HR SẴN SÀNG trả tiền để reach nhóm này                       │    │
+│  │                                                                  │    │
+│  │  Segment 3: SENIOR PASSIVE (30%)                                │    │
+│  │  - Senior/Manager đang nghe ngóng cơ hội                        │    │
+│  │  - HIGH monetization value                                       │    │
+│  │  - Khó acquire nhưng high LTV                                   │    │
+│  │                                                                  │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                          │
+│  PHÂN BIỆT VỚI YBOX/TOPCV:                                              │
+│  • Ybox/TopCV: "Tìm việc" (transactional)                               │
+│  • ReviewCongTy: "Research trước khi quyết định" (informational)        │
+│  • User journey khác: Research → Apply elsewhere → Come back to review  │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Content Quality Control by Segment:**
+
+| Segment | Review Requirements | Visibility Weight |
+|---------|---------------------|-------------------|
+| < 1 năm kinh nghiệm | Basic review | 0.5 |
+| 1-3 năm kinh nghiệm | Standard review | 0.8 |
+| 3-5 năm kinh nghiệm | Detailed review encouraged | 1.0 |
+| 5+ năm / Manager level | "Expert Review" badge | 1.2 |
+
+**Monetization Strategy Adjustment:**
+
+```
+Thay vì: 40% từ Job Posting (cạnh tranh trực tiếp)
+Thành:   40% từ "Talent Intelligence" + Job Posting SUPPLEMENT
+
+Talent Intelligence = Bán INSIGHT cho HR:
+- "Top 10 công ty được đánh giá cao nhất trong ngành Fintech"
+- "Benchmark: Công ty bạn vs Industry average"
+- "Candidate sentiment report"
+
+→ Khác biệt hóa với job boards thuần túy
+```
+
+---
+
+### 7.2. CRITICAL: Ảo tưởng về "Lá chắn pháp lý Singapore"
+
+**Phản biện:**
+- Luật An Ninh Mạng VN yêu cầu lưu trữ data tại VN nếu kinh doanh tại VN
+- Entity VN vẫn chịu trách nhiệm hình sự/dân sự
+- ISP có thể chặn domain bất cứ lúc nào
+
+**Giải pháp: "Compliant by Design" thay vì "Legal Arbitrage"**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    REVISED LEGAL STRATEGY                                │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ❌ BỎ: "Singapore shield" mentality                                    │
+│  ✅ THAY: "Proactive Compliance" approach                               │
+│                                                                          │
+│  NGUYÊN TẮC MỚI:                                                        │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                                                                  │    │
+│  │  1. COMPLY FIRST, FIGHT LATER (nếu cần)                         │    │
+│  │     - Khi có công văn → Gỡ ngay trong 24h                       │    │
+│  │     - Ghi nhận + Báo cáo minh bạch                              │    │
+│  │     - Nếu không có cơ sở pháp lý → Khiếu nại sau                │    │
+│  │                                                                  │    │
+│  │  2. CONTENT INSURANCE                                            │    │
+│  │     - Mua bảo hiểm trách nhiệm nghề nghiệp                      │    │
+│  │     - Retainer với law firm chuyên về Cyber Law                 │    │
+│  │     - Budget 5-10% revenue cho legal defense                    │    │
+│  │                                                                  │    │
+│  │  3. PROACTIVE RELATIONSHIP                                       │    │
+│  │     - Đăng ký với Bộ TT&TT như "Mạng xã hội"                    │    │
+│  │     - Tham gia Vietnam Internet Association                      │    │
+│  │     - Có kênh liên lạc trực tiếp với regulator                  │    │
+│  │                                                                  │    │
+│  │  4. DATA LOCALIZATION COMPLIANT                                  │    │
+│  │     - Data người dùng VN → Lưu tại VN (AWS/GCP VN region)       │    │
+│  │     - Backup ở Singapore chỉ cho disaster recovery              │    │
+│  │                                                                  │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                          │
+│  NHƯNG VẪN GIỮ TRANSPARENCY:                                            │
+│  • Public transparency report về takedowns                              │
+│  • User notification khi review bị gỡ + lý do                          │
+│  • Appeal process (dù có thể không restore nếu legal order)            │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Worst Case Scenario Planning:**
+
+| Scenario | Probability | Response Plan |
+|----------|-------------|---------------|
+| Công văn yêu cầu gỡ 1 review | High (monthly) | Comply + Document + Notify user |
+| Kiện dân sự từ công ty | Medium (quarterly) | Legal defense + Insurance claim |
+| Yêu cầu chặn toàn bộ domain | Low (rare) | Comply + Appeal + PR response |
+| Điều tra hình sự | Very Low | Full cooperation + Legal counsel |
+
+---
+
+### 7.3. CRITICAL: Nghịch lý "Aggregate Until Safe"
+
+**Phản biện:**
+- User thứ 9 viết review nhưng vẫn không xem được (chưa đủ 10)
+- Tạo "Micro Cold Start Problem" cho từng công ty nhỏ
+- Hàng nghìn SME sẽ kẹt ở 3-4 reviews mãi mãi
+
+**Giải pháp: "Progressive Disclosure" thay vì "Hard Threshold"**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    REVISED AGGREGATE MODEL                               │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ❌ CŨ: Hard threshold (10 reviews mới unlock)                          │
+│  ✅ MỚI: Progressive disclosure dựa trên số review                      │
+│                                                                          │
+│  DISPLAY LEVELS:                                                         │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                                                                  │    │
+│  │  1-2 reviews:                                                    │    │
+│  │  ┌──────────────────────────────────────────────────────┐       │    │
+│  │  │ "Công ty này có 2 reviews"                           │       │    │
+│  │  │ Điểm TB: Chưa đủ data                                │       │    │
+│  │  │ [Hãy là người thứ 3 review để mở khóa nội dung!]    │       │    │
+│  │  └──────────────────────────────────────────────────────┘       │    │
+│  │                                                                  │    │
+│  │  3-4 reviews:                                                    │    │
+│  │  ┌──────────────────────────────────────────────────────┐       │    │
+│  │  │ Điểm TB: 3.5/5 (dựa trên 4 reviews)                  │       │    │
+│  │  │ Categories breakdown: Lương ⭐⭐⭐, Văn hóa ⭐⭐⭐⭐   │       │    │
+│  │  │ [Preview 1 review ngắn - 50 từ đầu]                  │       │    │
+│  │  │ [Contribute review để xem đầy đủ!]                   │       │    │
+│  │  └──────────────────────────────────────────────────────┘       │    │
+│  │                                                                  │    │
+│  │  5-9 reviews:                                                    │    │
+│  │  ┌──────────────────────────────────────────────────────┐       │    │
+│  │  │ Full aggregate stats                                  │       │    │
+│  │  │ [Preview 2 reviews - 100 từ mỗi review]              │       │    │
+│  │  │ Word cloud từ tất cả reviews                         │       │    │
+│  │  │ [Đăng nhập để xem chi tiết]                          │       │    │
+│  │  └──────────────────────────────────────────────────────┘       │    │
+│  │                                                                  │    │
+│  │  10+ reviews:                                                    │    │
+│  │  ┌──────────────────────────────────────────────────────┐       │    │
+│  │  │ FULL ACCESS (như bình thường)                        │       │    │
+│  │  │ All reviews visible with paraphrasing for SME        │       │    │
+│  │  └──────────────────────────────────────────────────────┘       │    │
+│  │                                                                  │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                          │
+│  KEY INSIGHT: Luôn cho user THẤY GÌ ĐÓ, không bao giờ "blank state"    │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Incentive để vượt qua Cold Start cho SME:**
+
+```
+"Unlock Challenge" for SME companies:
+
+1. User viết review cho công ty có < 5 reviews
+   → Nhận 2x credits (thay vì 1x)
+   → Badge "Pioneer Reviewer"
+
+2. Nếu user là người thứ 5, 10, 20...
+   → Special badge + Bonus credits
+   → "Bạn đã mở khóa công ty này cho cộng đồng!"
+
+3. Company self-invite (cho phép công ty mời NV cũ review)
+   → Công ty gửi invite link cho ex-employees
+   → Ex-employees review = Công ty unlock nhanh hơn
+   → (Công ty chấp nhận risk có review xấu để có visibility)
+```
+
+---
+
+### 7.4. HIGH: Doanh thu 40% Job Posting = Xung đột lợi ích
+
+**Phản biện:**
+- HR không muốn đăng tin trên "bãi chiến trường"
+- Sales team sẽ gây áp lực ẩn review xấu của khách hàng Job Posting
+- Firewall sẽ bị chọc thủng
+
+**Giải pháp: Structural Separation + Revenue Diversification**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    ANTI-CONFLICT REVENUE MODEL                           │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  STRUCTURAL SEPARATION:                                                  │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                                                                  │    │
+│  │  Job Posting Revenue ≠ Review Visibility                        │    │
+│  │                                                                  │    │
+│  │  Cách ly hoàn toàn:                                              │    │
+│  │  • Job Posting: Hiển thị trong tab "Việc làm" riêng biệt        │    │
+│  │  • Reviews: Hiển thị trong tab "Đánh giá" riêng biệt            │    │
+│  │  • KHÔNG có bundle "Mua Job + Ẩn review"                        │    │
+│  │                                                                  │    │
+│  │  Technical enforcement:                                          │    │
+│  │  • Separate databases cho Job vs Review                         │    │
+│  │  • Separate admin panels                                         │    │
+│  │  • Audit log cho mọi content decision                           │    │
+│  │                                                                  │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                          │
+│  REVISED REVENUE MIX (giảm phụ thuộc vào Job Posting):                  │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                                                                  │    │
+│  │  OLD:                          NEW:                              │    │
+│  │  Job Posting: 40%      →      Job Posting: 20%                  │    │
+│  │  Ads: 30%              →      Ads: 25%                          │    │
+│  │  Premium: 20%          →      Premium: 25%                      │    │
+│  │  Reports: 10%          →      Reports: 10%                      │    │
+│  │                        →      User Subscription: 20% (NEW)      │    │
+│  │                                                                  │    │
+│  │  User Subscription (B2C):                                        │    │
+│  │  • 30K/tháng để xem không giới hạn                              │    │
+│  │  • Salary insights, company comparisons                         │    │
+│  │  • Early access to new reviews                                   │    │
+│  │  → Revenue từ USER, không từ COMPANY = Ít conflict hơn          │    │
+│  │                                                                  │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                          │
+│  PUBLIC COMMITMENT:                                                      │
+│  • Publish: "Danh sách công ty mua Job Posting trong tháng này"         │
+│  • Publish: "Rating distribution của Job Posting customers vs Others"   │
+│  • Nếu có sự khác biệt đáng kể → Red flag cho internal audit           │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 7.5. HIGH: LinkedIn Verify khiến User VN sợ hãi
+
+**Phản biện:**
+- User VN sợ HR scan LinkedIn activity
+- Dù hứa ẩn danh, user vẫn không tin
+- Phone OTP là đủ tốt
+
+**Giải pháp: Bỏ LinkedIn Verify bắt buộc**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    SIMPLIFIED VERIFICATION TIERS                         │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  REVISED LEVELS (bỏ LinkedIn):                                          │
+│                                                                          │
+│  Level 0: Email đăng ký              → "Basic User"        (weight 0.3) │
+│  Level 1: Phone OTP verified         → "Verified User"     (weight 0.6) │
+│  Level 2: Email công ty (@company)   → "Employee Verified" (weight 1.0) │
+│  Level 3: Document (optional)        → "Fully Verified"    (weight 1.0) │
+│                                                                          │
+│  LinkedIn: COMPLETELY OPTIONAL                                           │
+│  • Không yêu cầu, không khuyến khích                                    │
+│  • Nếu user tự nguyện link → Thêm badge "LinkedIn Connected"            │
+│  • KHÔNG ảnh hưởng đến trust weight                                     │
+│                                                                          │
+│  FOCUS ON PHONE OTP:                                                     │
+│  • Đây là verification "ngọt" nhất cho VN market                        │
+│  • Chặn multi-account spam hiệu quả                                     │
+│  • User đã quen với OTP (banking, Grab, etc.)                           │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 7.6. MEDIUM: AI Quality Check dễ bị bypass bằng ChatGPT
+
+**Phản biện:**
+- User sẽ dùng ChatGPT viết review 200 từ "chuẩn ngữ pháp nhưng sáo rỗng"
+- AI check AI-generated content rất khó
+
+**Giải pháp: "Specificity Check" thay vì "Quality Check"**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    REVISED CONTENT VALIDATION                            │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  THAY ĐỔI MINDSET:                                                       │
+│  ❌ Cũ: Check "Có đủ dài không? Có đủ tốt không?"                       │
+│  ✅ Mới: Check "Có SPECIFIC không? Có ACTIONABLE không?"                │
+│                                                                          │
+│  SPECIFICITY SIGNALS (khó fake hơn):                                    │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                                                                  │    │
+│  │  1. Named entities extraction:                                   │    │
+│  │     - Có nhắc đến benefit cụ thể? (bảo hiểm, parking, lunch)   │    │
+│  │     - Có nhắc đến process cụ thể? (review cycle, probation)    │    │
+│  │     - Có nhắc đến tool/tech cụ thể? (Jira, Slack, WFH policy)  │    │
+│  │                                                                  │    │
+│  │  2. Comparative statements:                                      │    │
+│  │     - "Lương cao hơn thị trường" vs "Lương tốt" (specific win)  │    │
+│  │     - "OT 3-4 ngày/tuần" vs "OT nhiều" (specific win)          │    │
+│  │                                                                  │    │
+│  │  3. Experience markers:                                          │    │
+│  │     - "Khi tôi..." "Trong thời gian làm..." "Có lần..."        │    │
+│  │     - Personal anecdotes khó fake hơn generic statements        │    │
+│  │                                                                  │    │
+│  │  4. Cross-validation với existing reviews:                       │    │
+│  │     - Review mới có mention điều tương tự với reviews cũ?       │    │
+│  │     - Nếu hoàn toàn khác biệt → Flag for review                │    │
+│  │                                                                  │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                          │
+│  SCORING:                                                                │
+│  specificity_score = named_entities + comparative_statements             │
+│                    + experience_markers + cross_validation_match         │
+│                                                                          │
+│  • Score < 2: "Review này cần thêm chi tiết cụ thể" (prompt to edit)   │
+│  • Score 2-3: Accept, normal visibility                                 │
+│  • Score > 3: Boost visibility, "Detailed Review" badge                 │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Prompt Engineering for Anti-Generic:**
+
+```
+TRƯỚC KHI SUBMIT, hiển thị:
+
+┌──────────────────────────────────────────────────────────────┐
+│ 💡 Tips để review của bạn được đánh giá cao:                 │
+│                                                               │
+│ ✓ Nêu cụ thể: "Lương 15-20 triệu" thay vì "Lương ổn"        │
+│ ✓ Chia sẻ ví dụ: "Có lần deadline gấp, team đã..."          │
+│ ✓ So sánh: "So với công ty cũ, ở đây OT ít hơn"             │
+│                                                               │
+│ Reviews chi tiết được ưu tiên hiển thị và nhận nhiều vote!  │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 7.7. MEDIUM: "Instant but Delayed" gây hoang mang
+
+**Phản biện:**
+- User chụp màn hình gửi bạn: "Tao mới chửi sếp nè"
+- Bạn lên xem không thấy gì → Mất niềm tin
+
+**Giải pháp: Crystal Clear Messaging + Share Preview**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    CLEAR EXPECTATION SETTING                             │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  SAU KHI SUBMIT, hiển thị NGAY:                                         │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                                                                  │    │
+│  │  ✅ Review của bạn đã được ghi nhận!                            │    │
+│  │                                                                  │    │
+│  │  ┌────────────────────────────────────────────────────────┐     │    │
+│  │  │  ⏰ QUAN TRỌNG:                                         │     │    │
+│  │  │                                                         │     │    │
+│  │  │  Review này sẽ công khai sau 48 giờ (vào 15:00 ngày    │     │    │
+│  │  │  25/01/2026) để bảo vệ danh tính của bạn.              │     │    │
+│  │  │                                                         │     │    │
+│  │  │  Trong thời gian này, CHỈ CÓ BẠN thấy review này.      │     │    │
+│  │  │  Bạn bè/đồng nghiệp sẽ KHÔNG thấy cho đến khi công    │     │    │
+│  │  │  khai.                                                  │     │    │
+│  │  └────────────────────────────────────────────────────────┘     │    │
+│  │                                                                  │    │
+│  │  [📋 Copy link để share khi review được công khai]              │    │
+│  │  [🔔 Nhận thông báo khi review được công khai]                  │    │
+│  │                                                                  │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                          │
+│  SHARE PREVIEW FEATURE:                                                  │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                                                                  │    │
+│  │  Nếu user muốn share ngay:                                       │    │
+│  │                                                                  │    │
+│  │  [Tạo Share Preview]                                             │    │
+│  │  → Generate image preview của review                             │    │
+│  │  → User có thể share IMAGE lên social media                     │    │
+│  │  → Image có watermark: "Sẽ công khai trên ReviewCongTy.vn       │    │
+│  │    vào 25/01/2026"                                               │    │
+│  │                                                                  │    │
+│  │  → Đây là "teaser" để tạo anticipation                          │    │
+│  │  → Người xem image → Quay lại sau 48h để đọc full               │    │
+│  │                                                                  │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Countdown Timer trong My Reviews:**
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│ MY REVIEWS                                                    │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│ 📝 Review về Công ty ABC                                     │
+│    Status: ⏳ Đang chờ công khai                             │
+│    Countdown: 47:23:15 còn lại                               │
+│    [Xem preview] [Chỉnh sửa] [Hủy]                           │
+│                                                               │
+│ 📝 Review về Công ty XYZ                                     │
+│    Status: ✅ Đã công khai                                   │
+│    Views: 234 | Helpful votes: 12                            │
+│    [Xem] [Chỉnh sửa]                                         │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 8. CẬP NHẬT PRIORITY MATRIX (V2)
+
+### 8.1. Revised Summary Table
+
+| # | Phản biện gốc | Giải pháp V1 | Phản biện V2 | Giải pháp V2 |
+|---|---------------|--------------|--------------|--------------|
+| 2.2 | Wrong Target | Fresh Graduates | Low value, Red Ocean | Hybrid Target (Job Hoppers primary) |
+| 4.1 | No Safe Harbor | Singapore Shield | Still liable in VN | Compliant by Design |
+| 1.2 | SME Deanon | Aggregate 10+ | Micro Cold Start | Progressive Disclosure |
+| 3.3 | Revenue | 40% Job Posting | Conflict of Interest | 20% Job + 20% User Sub |
+| 1.1 | Paranoia | LinkedIn Verify | LinkedIn scary | Phone OTP focus, LinkedIn optional |
+| 2.1 | Junk Data | AI Quality Check | ChatGPT bypass | Specificity Check |
+| 5.1 | 7-day Cooling | 48h + Instant | Confusing UX | Clear messaging + Share Preview |
+
+### 8.2. Revised Implementation Phases
+
+| Phase | Timeline | Focus | Key Changes from V1 |
+|-------|----------|-------|---------------------|
+| **Phase 1** | Month 1-2 | Foundation | Phone OTP focus (bỏ LinkedIn), Progressive Disclosure |
+| **Phase 2** | Month 3-4 | Growth | Hybrid Target Strategy, Specificity Check |
+| **Phase 3** | Month 5-6 | Revenue | User Subscription (B2C), Reduced Job Posting dependency |
+| **Phase 4** | Month 7-9 | Compliance | Compliant by Design, Legal retainer, Data localization |
+
+---
+
+## APPENDIX B: V1 vs V2 COMPARISON
+
+| Aspect | V1 Proposal | V2 Proposal (Revised) | Rationale |
+|--------|-------------|----------------------|-----------|
+| Target Segment | Fresh Graduates | Job Hoppers (2-5 years) | Higher content value, better monetization |
+| Legal Strategy | Singapore Shield | Compliant by Design | VN law reality |
+| SME Display | Hard threshold (10) | Progressive disclosure | Avoid micro cold-start |
+| Revenue Mix | 40% Job Posting | 20% Job + 20% User Sub | Reduce conflict of interest |
+| Verification | LinkedIn Level 2 | Phone OTP primary | VN user psychology |
+| Quality Check | AI word count | Specificity signals | Anti-ChatGPT |
+| Delayed Post | 48h silent | 48h with share preview | Clear UX |
